@@ -1,0 +1,11 @@
+# Core import requirements. This is NOT an exact historical environment lock.
+# Install a platform-appropriate PyTorch build separately (see README.md).
+numpy
+pandas
+scipy
+scikit-learn
+einops
+tqdm
+yacs==0.1.8
+PyYAML
+matplotlib

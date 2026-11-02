@@ -1,0 +1,74 @@
+{
+  "configs/THUMOS/baseline_resnet50.yaml": {
+    "dataset": "THUMOS",
+    "variant": "baseline",
+    "feature": "resnet50",
+    "cfn_scale": 0.0,
+    "reference_eval_epoch": 9,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "original"
+  },
+  "configs/THUMOS/sacg_resnet50.yaml": {
+    "dataset": "THUMOS",
+    "variant": "sacg",
+    "feature": "resnet50",
+    "cfn_scale": 0.05,
+    "reference_eval_epoch": 9,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "original"
+  },
+  "configs/THUMOS/baseline_dinov3.yaml": {
+    "dataset": "THUMOS",
+    "variant": "baseline",
+    "feature": "dinov3",
+    "cfn_scale": 0.0,
+    "reference_eval_epoch": 7,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "original"
+  },
+  "configs/THUMOS/sacg_dinov3.yaml": {
+    "dataset": "THUMOS",
+    "variant": "sacg",
+    "feature": "dinov3",
+    "cfn_scale": 0.08,
+    "reference_eval_epoch": 7,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "original"
+  },
+  "configs/CrossTask/baseline_i3d.yaml": {
+    "dataset": "CrossTask",
+    "variant": "baseline",
+    "feature": "i3d",
+    "cfn_scale": 0.0,
+    "reference_eval_epoch": 9,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "original"
+  },
+  "configs/CrossTask/sacg_i3d.yaml": {
+    "dataset": "CrossTask",
+    "variant": "sacg",
+    "feature": "i3d",
+    "cfn_scale": 0.03,
+    "reference_eval_epoch": 9,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "original"
+  },
+  "configs/TVSeries/baseline_drop_oob.yaml": {
+    "dataset": "TVSeries",
+    "variant": "baseline",
+    "feature": "drop_oob",
+    "cfn_scale": 0.0,
+    "reference_eval_epoch": null,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "drop_oob"
+  },
+  "configs/TVSeries/sacg_drop_oob.yaml": {
+    "dataset": "TVSeries",
+    "variant": "sacg",
+    "feature": "drop_oob",
+    "cfn_scale": 0.05,
+    "reference_eval_epoch": null,
+    "reference": "Current manuscript settings; not a recovered per-run resolved_config.",
+    "label_policy": "drop_oob"
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "source_relative_path": "main.py",
+    "release_relative_path": "main.py",
+    "sha256": "7a4548136307a8c7025948fc04252cc532972025b95fcd645b2d7a65ac6c4c83"
+  },
+  {
+    "source_relative_path": "src/__init__.py",
+    "release_relative_path": "src/__init__.py",
+    "sha256": "2d38981e730ef24a5ed4c3948e7a982d6e796d12f6bc8de25baeb5eb3c010822"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/__init__.py",
+    "sha256": "2d38981e730ef24a5ed4c3948e7a982d6e796d12f6bc8de25baeb5eb3c010822"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/config/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/config/__init__.py",
+    "sha256": "6b45efdab2b1e4f22c0e2b55602f3162fa6e2083e09dc5472306cea034c11ed5"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/config/defaults.py",
+    "release_relative_path": "src/rekognition_online_action_detection/config/defaults.py",
+    "sha256": "77092e304e189b0d91dc6cdfe623eaf16d5e8ecec542abbed27ba1281123559d"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/datasets/datasets.py",
+    "release_relative_path": "src/rekognition_online_action_detection/datasets/datasets.py",
+    "sha256": "dab67747ad999802792071f6d8c5993128063556bee461ba7cdc2d9524c69fde"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/datasets/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/datasets/__init__.py",
+    "sha256": "47a17fcc5b9e6c3fc96b381ae2c37ff16d774faec48e43bdfb7604064b9d9cac"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/datasets/perframe_data_layers.py",
+    "release_relative_path": "src/rekognition_online_action_detection/datasets/perframe_data_layers.py",
+    "sha256": "b101625c6189b4547fe179119bb79b5950f6689f2a120b2ae48cd34becb10ba1"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/env.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/env.py",
+    "sha256": "ec3467e0bb642e561f187bfe32deb061aebb92bd47543a629f1bd31d12a5738f"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/ek_utils.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/ek_utils.py",
+    "sha256": "3e4ea595de26350ae57ec5f4ce63f83f4811a12a26d6583ac50793613f935ae5"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/registry.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/registry.py",
+    "sha256": "82f794561159479451fb56b5512b78ab3026ac6df233e12ab0a461733711e536"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/ema.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/ema.py",
+    "sha256": "5732b59ded61e1ecd8106ce7ffd51c49694b39fbcd6c64a6bed23712a4400bfd"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/visual_attn.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/visual_attn.py",
+    "sha256": "5c6b73b109cc2bf24acb5c741316db110a2a05722d20dcaa5a0d6909cce7e1c9"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/checkpointer.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/checkpointer.py",
+    "sha256": "dee3eff4e91b75c95b526809ec35f202578e0edfc20363f1cf20f52f1d66e82f"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/__init__.py",
+    "sha256": "2d38981e730ef24a5ed4c3948e7a982d6e796d12f6bc8de25baeb5eb3c010822"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/logger.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/logger.py",
+    "sha256": "791c4cebc58538cb2eb7302fc77d91395a3a9c13c43e23dbe76565e758153a41"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/utils/parser.py",
+    "release_relative_path": "src/rekognition_online_action_detection/utils/parser.py",
+    "sha256": "224db53382c733fbe135cff9f4446e647ee0193048bf19db388f58a1adda61ad"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/models.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/models.py",
+    "sha256": "5f93df66d80bcc9cf0a296a745a791e530e552921ae539fd8ea16e76931783a1"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/__init__.py",
+    "sha256": "fa59ce3f663f73e8b3409645ad11628b5f7c8d463e25880024694bce3088c8ea"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/weights_init.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/weights_init.py",
+    "sha256": "86cda2e1323720fd6c56242a9e972485de490e25da1a8a2c4be0c6de15cbe531"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/feature_head.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/feature_head.py",
+    "sha256": "0f991a46226f031d0a2bc405f26da872a93a7844bdb00a98a84da5087358d7b1"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/cmert.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/cmert.py",
+    "sha256": "454ca674d78d3e61694aac17a441f15164cc3db076027d5134dc533ac1c54d8f"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/normalized_linear.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/normalized_linear.py",
+    "sha256": "b76fece2dacb5b923bd921296eeb78a2fc95e915c5a16f8cabe33a159a70564b"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/optimizers/lr_scheduler.py",
+    "release_relative_path": "src/rekognition_online_action_detection/optimizers/lr_scheduler.py",
+    "sha256": "641e19d05fbf70d36c663ea534638906cfe62e9b908ab858334d0c3726ec81e4"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/optimizers/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/optimizers/__init__.py",
+    "sha256": "e2df08b6185ed1d29874351e2216d9238c07c21caa06a0846e79c12d178fbd1f"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/optimizers/optimizers.py",
+    "release_relative_path": "src/rekognition_online_action_detection/optimizers/optimizers.py",
+    "sha256": "6ecb6a542faa3259ba407960910e6440fa64dc246b8bcfbba44e6179fbc029ea"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/evaluation/metrics.py",
+    "release_relative_path": "src/rekognition_online_action_detection/evaluation/metrics.py",
+    "sha256": "3ebdb7af2fd08f3ad80033d75389a670949701f040d0292beae80e93f565f9e1"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/evaluation/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/evaluation/__init__.py",
+    "sha256": "8a1ba5cb1ce3ae393cfa0920ac0285dafa79d6af1ff7518b607f1c3d16740c7b"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/evaluation/evalution.py",
+    "release_relative_path": "src/rekognition_online_action_detection/evaluation/evalution.py",
+    "sha256": "aa6d09f316dd0f9bea12a5a88160383ca1777393971d872a070f8eae891a0d72"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/evaluation/postprocessing.py",
+    "release_relative_path": "src/rekognition_online_action_detection/evaluation/postprocessing.py",
+    "sha256": "4bcabdb81685cd74b58a99edcf96ca913f9451b2970ab7f2642ddf32031ad333"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/evaluation/new_metrics.py",
+    "release_relative_path": "src/rekognition_online_action_detection/evaluation/new_metrics.py",
+    "sha256": "60759137c37240fb9a506f44ef451cd312be730e539ce958a93bee0b768c7af1"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/criterions/criterions.py",
+    "release_relative_path": "src/rekognition_online_action_detection/criterions/criterions.py",
+    "sha256": "b3c435ac68b9d6d54b3db99c972dfb9fbc55c9ca41cc29dd34f8c972b37190b5"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/criterions/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/criterions/__init__.py",
+    "sha256": "e20bb161bcacd74f86821f2ea5f64bc695aa04c39127b38b8ca1dfd6b1955bb4"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/transformer/multihead_attention.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/transformer/multihead_attention.py",
+    "sha256": "facb012cc893251b953abd519a551a7c494e8155db4516a2379d748e1de7f457"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/transformer/position_encoding.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/transformer/position_encoding.py",
+    "sha256": "be667cce4cb76b436310d7e2671ac4002508d8767daaf5e8acb3ba545fe0868b"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/transformer/__init__.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/transformer/__init__.py",
+    "sha256": "c50c713eb310d1d4abedd03166c007f74b3c1f0e9aab5556422e43a28c85de85"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/transformer/utils.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/transformer/utils.py",
+    "sha256": "c9c3f50b3eb4c7870f28e28a0b83d608de8f26ff9f54a2fe47656a45e2ef5fc1"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/transformer/transformer.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/transformer/transformer.py",
+    "sha256": "c69571214d76d994536b2cca7e62089364ccfc78c15180b2379ebe1017fd363a"
+  },
+  {
+    "source_relative_path": "src/rekognition_online_action_detection/models/transformer/dat1d_attention.py",
+    "release_relative_path": "src/rekognition_online_action_detection/models/transformer/dat1d_attention.py",
+    "sha256": "1411d6968ef20dbff062608bd4cacd10cb23faf879147c6f32ce434bfdc74b49"
+  },
+  {
+    "source_relative_path": "external/rulstm/RULSTM/utils.py",
+    "release_relative_path": "external/rulstm/RULSTM/utils.py",
+    "sha256": "b4a5dfbda23b5ace1c08b86e715b70db83854e8bfb6732fcc176d2e61be53bd9"
+  },
+  {
+    "source_relative_path": "README.md",
+    "release_relative_path": "docs/original/README.md",
+    "sha256": "170e321b79293476ba136367a4dc4a0c35869ce8a1f3ea88ebf252e1104f0c24"
+  },
+  {
+    "source_relative_path": "requirements.txt",
+    "release_relative_path": "docs/original/requirements.txt",
+    "sha256": "dc0676465e1844d4e19e4534c4148ba46488e55e8e8f6538118817831c3a387c"
+  },
+  {
+    "source_relative_path": "configs/TVSeries/cmert_long256_work4_kinetics_1x.yaml",
+    "release_relative_path": "docs/original/configs/TVSeries/cmert_long256_work4_kinetics_1x.yaml",
+    "sha256": "8c8eed6d188d8bf3d798d3e659b10473b7f84272ef7705fc950abc4c2b141ee8"
+  },
+  {
+    "source_relative_path": "configs/CrossTask/cmert_long128_work20_i3d_1x.yaml",
+    "release_relative_path": "docs/original/configs/CrossTask/cmert_long128_work20_i3d_1x.yaml",
+    "sha256": "16abcbfd97456f260c10374d6301f7e468d7c85618fb34de19d298689fa33f0a"
+  },
+  {
+    "source_relative_path": "configs/EK100/cmert_long128_work8_tsn_1x.yaml",
+    "release_relative_path": "docs/original/configs/EK100/cmert_long128_work8_tsn_1x.yaml",
+    "sha256": "3ae660061d11b5e6b14934a05f7c37bfa539311884a08b3e57a74172dcba0ef1"
+  },
+  {
+    "source_relative_path": "configs/THUMOS/cmert_long256_work4_kinetics_1x.yaml",
+    "release_relative_path": "docs/original/configs/THUMOS/cmert_long256_work4_kinetics_1x.yaml",
+    "sha256": "08aece3d0013d4c7983d02c492d4aeab9f4536cacb7d9b9d1b9f84cd189cf0ab"
+  },
+  {
+    "source_relative_path": "measure_th14_efficiency.py",
+    "release_relative_path": "measure_th14_efficiency.py",
+    "sha256": "f97661e35a6fde00e4e3e079b03de2a72f49db77fc253306be59052ceb95db6e"
+  },
+  {
+    "source_relative_path": "gradient_diagnostics.py",
+    "release_relative_path": "gradient_diagnostics.py",
+    "sha256": "d7f3378d3b09d41a393617e56be5356ef0b526b9214e2dc2caf98edf5538a586"
+  },
+  {
+    "source_relative_path": "plot_figure2_loss_curve.py",
+    "release_relative_path": "plot_figure2_loss_curve.py",
+    "sha256": "43c21eb8fe67ac658cf5e493b473ea0f76284d3bd4b9a2a6ac7560158e4d1608"
+  },
+  {
+    "source_relative_path": "plot_figure4_contranorm_similarity.py",
+    "release_relative_path": "plot_figure4_contranorm_similarity.py",
+    "sha256": "a867561c86c17cc7b881f0ebc5b58d85965eff69b96b1d98b5108901c3a979ad"
+  },
+  {
+    "source_relative_path": "vis_dump_utils.py",
+    "release_relative_path": "vis_dump_utils.py",
+    "sha256": "6cac3bff7dbacc4b253279f12c50c29d340b38adfcc5f7d29d4734348873cecc"
+  },
+  {
+    "source_relative_path": "tools/short_term_position_loss.py",
+    "release_relative_path": "tools/short_term_position_loss.py",
+    "sha256": "b22dbbd94a41ad99192a8f532ec88d936612d7b4cb8b800e22e2bb783769c567"
+  },
+  {
+    "source_relative_path": "tools/dump_figure4_gen_tokens.py",
+    "release_relative_path": "tools/dump_figure4_gen_tokens.py",
+    "sha256": "4f558369da7d4acd8ba961fbeb8dab2718975188292544de9a0a650891be040a"
+  },
+  {
+    "source_relative_path": "tools/analyze_future_token_similarity.py",
+    "release_relative_path": "tools/analyze_future_token_similarity.py",
+    "sha256": "dd824b68001ce405ee1a23c9f04e83ee3c85c0d9da5cb6abb8f5d6e3541f39f2"
+  }
+]

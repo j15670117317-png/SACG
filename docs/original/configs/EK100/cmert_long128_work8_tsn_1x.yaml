@@ -1,0 +1,66 @@
+DATA:
+  DATA_NAME: 'EK100'
+  CLIP_MIXUP_RATE: 0.5
+  CLIP_MIXUP_SAMPLE: 'uniform'
+  EK_EXT_PATH: 'external/rulstm/RULSTM/data/ek100/'
+  DATA_INFO: 'data/data_info.json'
+  DATA_ROOT: 'data/EK100'
+INPUT:
+  MODALITY: 'twostream'
+  VISUAL_FEATURE: 'rgb_kinetics_bninception'
+  MOTION_FEATURE: 'flow_kinetics_bninception'
+MODEL:
+
+  MODEL_NAME: 'CMert'
+  FEATURE_HEAD:
+    LINEAR_ENABLED: True
+    LINEAR_OUT_FEATURES: 2048
+  LSTR:
+    NUM_HEADS: 8
+    DIM_FEEDFORWARD: 2048
+    DROPOUT: 0.1
+    DROPOUT_CLS: 0.8
+    DROPOUT_VN: 0.2 # Testra2MAT
+    ACTIVATION: 'relu'
+    LONG_MEMORY_USE_PE: False
+    WORK_MEMORY_USE_PE: True
+    LONG_MEMORY_INCLUDE_WORK: True
+    LONG_MEMORY_INCLUDE_WORK2: False
+    LONG_MEMORY_SECONDS: 128
+    LONG_MEMORY_SAMPLE_RATE: 4
+    WORK_MEMORY_SECONDS: 8
+    WORK_MEMORY_SAMPLE_RATE: 1
+    FUTURE_SECONDS: 8
+    FUTURE_SAMPLE_RATE: 1
+    ANTICIPATION_SECONDS: 5
+    ANTICIPATION_SAMPLE_RATE: 1
+    CONTEXT_SECONDS: 2.0
+    REFINE_TIMES: 1
+    ENC_MODULE: [
+      [16, 1, True], [16, 2, True]
+    ]
+    DEC_MODULE: [-1, 2, True]
+    GEN_MODULE: [24, 2, True]
+    FUT_MODULE: [[32, 1, True],]
+    V_N_CLASSIFIER: True
+    LOSS_WEIGHT_V: 1.
+    LOSS_WEIGHT_N: 1.
+    FUSION_WEIGHT_V: 1.
+    FUSION_WEIGHT_N: 1.
+  CRITERIONS: [['MCE_EQL', {'anno_path': 'external/rulstm/RULSTM/data/ek100/'}], ['MCE', {}],['MARGINAL',{}]]
+DATA_LOADER:
+  BATCH_SIZE: 16
+  NUM_WORKERS: 4
+  PIN_MEMORY: False
+  TYPE: 'det'
+SOLVER:
+  NUM_EPOCHS: 12
+  OPTIMIZER: 'adam'
+  BASE_LR: 7e-05
+  WEIGHT_DECAY: 1e-4
+  SAVE_EVERY: 2
+  SCHEDULER:
+    SCHEDULER_NAME: 'warmup_cosine'
+    WARMUP_FACTOR: 0.3
+    WARMUP_EPOCHS: 10.0
+    WARMUP_METHOD: 'linear'

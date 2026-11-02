@@ -1,0 +1,122 @@
+# Explicit publication configuration; see README.md for data prerequisites.
+DATA:
+  DATA_NAME: CrossTask
+  DATA_INFO: data/data_info.json
+  DATA_ROOT: data/CrossTask
+  METRICS: AP
+INPUT:
+  MODALITY: twostream
+  VISUAL_FEATURE: rgb_i3d
+  MOTION_FEATURE: rgb_resnet152_audio
+  OBJECT_FEATURE: rgb_i3d
+  TARGET_PERFRAME: target_perframe
+MODEL:
+  MODEL_NAME: CMeRT
+  FEATURE_HEAD:
+    LINEAR_ENABLED: true
+    LINEAR_OUT_FEATURES: 2048
+  LSTR:
+    NUM_HEADS: 8
+    DIM_FEEDFORWARD: 2048
+    DROPOUT: 0.1
+    ACTIVATION: relu
+    ENC_ATTENTION_TYPE: dotproduct
+    LONG_COMPRESS_M0_ATTENTION_TYPE: dotproduct
+    ASSA_TAU: 1.0
+    LONG_MEMORY_SECONDS: 128
+    LONG_MEMORY_SAMPLE_RATE: 1
+    LONG_MEMORY_INCLUDE_WORK: true
+    WORK_MEMORY_SECONDS: 20
+    WORK_MEMORY_SAMPLE_RATE: 1
+    CONTEXT_SECONDS: 20
+    FUTURE_SECONDS: 12
+    FUTURE_SAMPLE_RATE: 1
+    ANTICIPATION_SECONDS: 1
+    REFINE_TIMES: 1
+    ENC_MODULE:
+    - - 16
+      - 1
+      - true
+    - - 32
+      - 2
+      - true
+    DEC_MODULE:
+    - -1
+    - 2
+    - true
+    GEN_MODULE:
+    - 12
+    - 2
+    - true
+    FUT_MODULE:
+    - - 12
+      - 1
+      - true
+    V_N_CLASSIFIER: false
+    LOSS_WEIGHT_V: 1.0
+    LOSS_WEIGHT_N: 1.0
+    FUSION_WEIGHT_V: 1.0
+    FUSION_WEIGHT_N: 1.0
+    LONG_COMPRESS_SELF_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_CROSS_ATTN_TYPE: dotproduct
+    DEC_SELF_ATTN_TYPE: dotproduct
+    DEC_CROSS_ATTN_TYPE: dotproduct
+    GEN_SELF_ATTN_TYPE: dotproduct
+    REFINE_SELF_ATTN_TYPE: dotproduct
+    REFINE_CROSS_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_STAGE0_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_STAGE0_SELF_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_STAGE0_CROSS_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_STAGE1_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_STAGE1_SELF_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_STAGE1_CROSS_ATTN_TYPE: dotproduct
+    LONG_COMPRESS_MQ_MOE: false
+    DEC_MQ_MOE: false
+    REFINE_MQ_MOE: false
+    GEN_MQ_MOE: false
+    INFERENCE_MODE: batch
+    ASSA_INIT_W:
+    - 0.0
+    - 0.0
+    GEN_CROSS_ASSA_INIT_W:
+    - 0.0
+    - 0.0
+    GEN_CROSS_ATTN_TYPE: assa
+    GEN_CONTRANORM: true
+    GEN_CONTRANORM_POS: cross
+    GEN_CONTRANORM_SCALE: 0.03
+    GEN_CONTRANORM_TEMP: 1.0
+    GEN_CONTRANORM_DUAL_NORM: false
+    GEN_CONTRANORM_LEARNABLE: false
+    GEN_CONTRANORM_POSITIVE: false
+    GEN_CONTRANORM_IDENTITY: false
+    GEN_CONTRANORM_PRE_NORM: false
+    ATTENTION_RESIDUAL: false
+    FC_NORM: false
+  CRITERIONS:
+  - - MCE
+    - ignore_index: -100
+  PP_SIZE: 3
+  CHECKPOINT: ''
+DATA_LOADER:
+  BATCH_SIZE: 32
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  TYPE: ''
+SOLVER:
+  NUM_EPOCHS: 15
+  OPTIMIZER: adam
+  BASE_LR: 7e-05
+  WEIGHT_DECAY: 1e-5
+  SAVE_EVERY: 1
+  S1_W: 0.5
+  S2_W: 0.5
+  F_W: 0.5
+  SCHEDULER:
+    SCHEDULER_NAME: warmup_cosine
+    WARMUP_FACTOR: 0.3
+    WARMUP_EPOCHS: 5.0
+    WARMUP_METHOD: linear
+SEED: 0
+OUTPUT_DIR: outputs
+SESSION: seed0
